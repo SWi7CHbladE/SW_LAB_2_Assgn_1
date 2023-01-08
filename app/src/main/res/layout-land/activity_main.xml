@@ -26,7 +26,7 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="32dp"/>
     <TextView
             android:id="@+id/Output"
-            android:text="TextView"
+            android:text="Output"
             android:layout_width="365dp"
             android:layout_height="140dp"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"

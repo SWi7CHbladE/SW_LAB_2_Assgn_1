@@ -17,10 +17,39 @@ class MainActivity : AppCompatActivity() {
         var input = findViewById<EditText>(R.id.Message)
 
 
+        fun countVowels(text:String):Int {
+            var result: Int = 0
+            var flag: Int = 0
+            var charToCheck: Char
+            while (flag < text.length) {
+                charToCheck = text.get(flag)
+                flag += 1
+                if ((charToCheck == 'a') || (charToCheck == 'e') || (charToCheck == 'i') || (charToCheck == 'o') || (charToCheck == 'u')
+                    || (charToCheck == 'A') || (charToCheck == 'E') || (charToCheck == 'I') || (charToCheck == 'O') || (charToCheck == 'U')
+                )
+                    result += 1
+            }
+                return result
+
+        }
+
+        fun countCharacters(text:String):Int{
+            var result: Int = 0
+            var flag: Int = 0
+            var charToCheck: Char
+            while (flag < text.length) {
+                charToCheck = text.get(flag)
+                flag += 1
+                if ((charToCheck != ' ') && (charToCheck != '.') && (charToCheck != ','))
+                    result += 1
+            }
+            return result
+        }
+
         button.setOnClickListener {
 
 
-            output.text = "Number of Vowels = 5"
+            output.text = "The number of vowels are " + countVowels(input.text.toString()).toString() + "\n And the number of consonants is " + (countCharacters(input.text.toString()) - countVowels(input.text.toString())).toString()
         }
 
     }

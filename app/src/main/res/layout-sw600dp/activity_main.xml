@@ -15,7 +15,7 @@
             android:hint="Enter your message here"
             android:inputType="text"
             app:layout_constraintTop_toTopOf="parent" tools:layout_editor_absoluteX="16dp"
-            android:layout_marginTop="64dp"/>
+            android:layout_marginTop="640dp"/>
     <Button
             android:id="@+id/Process"
             android:layout_width="wrap_content"
@@ -23,10 +23,10 @@
             android:text="Process"
             app:layout_constraintTop_toBottomOf="@+id/Message"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="32dp"/>
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="120dp"/>
     <TextView
             android:id="@+id/Output"
-            android:text="TextView"
+            android:text="Output"
             android:layout_width="365dp"
             android:layout_height="140dp"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
